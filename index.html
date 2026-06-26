@@ -4,45 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Augusto</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #121314, #171a20);
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        h1{
+            margin:20px 0;
+            font-size:2.5rem;
+        }
+
+        h2{
+            margin-bottom:15px;
+        }
+
+        hr{
+            border:none;
+            height:2px;
+            background:white;
+            width:80%;
+            margin:30px auto;
+            opacity:0.4;
+        }
+
+        .galeria{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            margin-top:20px;
+        }
+
+        .galeria img{
+            width:250px;
+            height:350px;
+            object-fit:cover;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.4);
+            transition:0.3s;
+        }
+
+        .galeria img:hover{
+            transform:scale(1.05);
+        }
+
+        .card{
+            background:rgba(255,255,255,0.12);
+            backdrop-filter:blur(8px);
+            border-radius:20px;
+            padding:25px;
+            width:80%;
+            max-width:900px;
+            margin:20px auto;
+            box-shadow:0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        ul{
+            list-style-position:inside;
+            text-align:left;
+            max-width:600px;
+            margin:0 auto;
+            line-height:2;
+            font-size:1.1rem;
+        }
+
+        .lugares img{
+            width:500px;
+            max-width:90%;
+            border-radius:15px;
+            margin-top:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.4);
+            transition:0.3s;
+        }
+
+        .lugares img:hover{
+            transform:scale(1.03);
+        }
+
+        a{
+            display:inline-block;
+            margin:15px 0 30px;
+            text-decoration:none;
+            color:white;
+            background:#ff9800;
+            padding:10px 20px;
+            border-radius:30px;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        a:hover{
+            background:#ffb74d;
+            transform:translateY(-3px);
+        }
+
+        footer{
+            margin-top:30px;
+            opacity:0.8;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Pedro Augusto de Freitas César</h1>
+
+    <div class="galeria">
+        <img src="ppp.jpeg" alt="Na montanha">
+        <img src="óculos.jpeg" alt="Menino de óculos">
+        <img src="lps.jpeg" alt="Menino de kimono">
+        <img src="pp.jpeg" alt="Menino">
+    </div>
+
     <hr>
+
+    <div class="card">
+        <h1>Curiosidades</h1>
+
+        <ul>
+            <li>Idade: 15 anos</li>
+            <li>Pratico jiu-jitsu, basquete, futebol e tênis de mesa</li>
+            <li>Gosto de back-end, matemática e Rocket League</li>
+            <li>Comidas favoritas: carbonara, strogonoff, parmegiana, pizza e hambúrguer</li>
+        </ul>
+    </div>
+
     <hr>
-    <img src="assets/ppp.jpeg" alt="na montanha" height="400-">
-    <img src="assets/óculos.jpeg" alt="Menino de óculos" height="400-">
-    <img src="assets/lps.jpeg" alt="Menino de kimono" height="400-">
-    <img src="assets/pp.jpeg" alt="Menino de óculos" height="400-">
-    <hr>
-    <hr>
-    <h1>Curiosidades</h1>
-    <h2><ul>
-    <li>
-        Idade: 15 anos
-    </li>
-    <li>
-        Pratico: jiu-jitsu, basquete, futebol, tenis de mesa
-    </li>
-    <li>
-        Gostos: bech-end, matemática, Rocket League
-    </li>
-    <li>
-    Comidas favoritos: carbonara, strogonof, parmegiana, pizza, hamburguer
-    </li>
-    </ul></h2>
-    <br>
-    <hr>
-    <hr>
-    <h1>Lugares</h1>
-    <img src="assets/Pico_do_lopo.jpg" alt="Pico do lopo" height="400-">
-    <br>
-    <a href="assets/https://pt.wikipedia.org/wiki/Serra_do_Lopo" target="_blank">Serra do lopo</a>
-    <br>
-    <img src="assets/Ilha_bela.jpg" alt="Ilha bela" height="400-">
-    <br>
-    <a href="assets/https://pt.wikipedia.org/wiki/Ilhabela" target="_blank">Ilhabela</a>
-    <br>
-    <br>
-    <br>
+
+    <div class="card lugares">
+        <h1>Lugares Favoritos</h1>
+
+        <img src="Pico_do_lopo.jpg" alt="Pico do Lopo">
+        <br>
+        <a href="https://pt.wikipedia.org/wiki/Serra_do_Lopo" target="_blank">
+            Serra do Lopo
+        </a>
+
+        <br>
+
+        <img src="iLha bela.jpg" alt="Ilhabela">
+        <br>
+        <a href="https://pt.wikipedia.org/wiki/Ilhabela" target="_blank">
+            Ilhabela
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2026 - Página pessoal de Pedro Augusto</p>
+    </footer>
+
 </body>
 </html>
